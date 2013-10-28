@@ -32,7 +32,9 @@ class AppController extends Controller {
 	 */
 	public function beforeFilter()
 	{
-
+		
+		//$this->User->save(array('role_id' => '1', 'type' => 'admin', 'reminderPassword' => 'unipe', 'name' => 'Rogerio', 'lastname' => 'Nunes', 'email' => 'rogerionunes90@gmai.com', 'login' => 'admin', 'password' => '123', 'is_active' => true));
+		
 		// Se acessar prefixo cliente
 		if ($this->isPrefix('admin')):
 
